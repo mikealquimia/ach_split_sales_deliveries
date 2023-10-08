@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_update_sale_order_line" model="ir.ui.view">
+            <field name="name">Set Qty Picking</field>
+            <field name="model">update.sale.order.line</field>
+            <field name="arch" type="xml">
+                <form string="Qty to picking">
+                    <p class="oe_grey">
+                        Set qty to picking for sale order line.
+                    </p>
+                    <field name="name" invisible="1"/>
+                    <field name="order_id" invisible="1"/>
+                    <field name="order_line">
+                        <tree editable="bottom" create="false" delete="false">
+                            <field name="no_update_qty_temp" invisible="1"/>
+                            <field name="product_id" readonly="1" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="product_uom_qty" readonly="1"/>
+                            <field name="qty_delivered" readonly="1"/>
+                            <field name="product_uom_qty_temp" attrs="{'readonly': [('no_update_qty_temp', '=', False)]}"/>
+                            <field name="product_uom_qty_validate" readonly="1"/>
+                        </tree>
+                    </field>
+                    <footer>
+                        <button name="set_order_line" string="Create Picking" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_view_update_sale_order_line" model="ir.actions.act_window">
+            <field name="name">Set Qty Picking</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">update.sale.order.line</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="binding_model_id" ref="sale.model_sale_order" />
+        </record>
+
+</odoo>

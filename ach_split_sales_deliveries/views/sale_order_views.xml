@@ -1,0 +1,22 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="ach_split_sales_deliveries_form">
+      <field name="name">Sale Slip Picking</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"/>
+      <field name="type">form</field>
+      <field name="arch" type="xml">
+        <xpath expr="//button[@id='action_confirm']" position="after">
+          <field name="create_picking" invisible="1"/>
+          <button name="%(action_view_update_sale_order_line)d" type="action" context="{'default_order_id': active_id}" string="Create Picking" class="oe_highlight" attrs="{'invisible': [('create_picking', '=', False)]}"/>
+        </xpath>
+        <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="after">
+          <field name="product_uom_qty_temp" invisible="1"/>
+          <field name="product_uom_qty_validate" readonly="1"/>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>
