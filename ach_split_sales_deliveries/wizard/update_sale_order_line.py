@@ -12,6 +12,5 @@ class UpdateSaleOrderLine(models.TransientModel):
     order_id = fields.Many2one('sale.order', string='Order')
     order_line = fields.One2many('sale.order.line', 'order_id', string='Order Lines', related="order_id.order_line", readonly=False)
 
-    @api.multi
     def set_order_line(self):
         return self.order_id.create_slip_picking()
