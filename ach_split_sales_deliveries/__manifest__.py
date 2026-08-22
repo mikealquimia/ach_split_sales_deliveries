@@ -5,7 +5,7 @@
         """,
     'description': """Obtain multiple deliveries according to sales requirements.
     """,
-    'author': "ACH",
+    'author': "ACH Alchemical Code",
     'license': 'LGPL-3',
     'support': 'developmentalchemygx@gmail.com',
     'category': 'Sales',
