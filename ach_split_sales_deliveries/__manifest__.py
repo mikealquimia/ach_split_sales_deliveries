@@ -9,7 +9,7 @@
     'license': 'LGPL-3',
     'support': 'developmentalchemygx@gmail.com',
     'category': 'Sales',
-    'version': '0.1',
+    'version': '16.0.1.0.0',
     'live_test_url': 'https://youtu.be/EDem9LEk6z8',
     'price': 18.00,
     'depends': ['base',

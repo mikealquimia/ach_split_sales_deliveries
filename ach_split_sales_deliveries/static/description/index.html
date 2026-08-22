@@ -1,91 +1,108 @@
+<div>
 <div style=" min-height: 600px; width: 100%; position: relative;">
     <h1 class="oe_slogan" style="color:#875A7B;">Split Sales Deliveries</h1>
     <h3 class="oe_mt32 text-center" style="color:#684660;font-size: 30px;">
         Obtain multiple deliveries according to sales requirements.
     </h3>
     <br/>
-    <img src="/images/youtube.png" class="img-thumbnail">
+    <img src="/images/youtube.png" class="img-thumbnail"/>
+
+    <div class="d-flex align-items-center" style="border-bottom: 2px solid #00438B; padding: 15px 0px;" id="screenshots">
+        <div class="d-flex justify-content-center align-items-center mr-2"
+            style="background-color: #F5F5F5; border-radius: 0px; width: 40px; height: 40px;">
+                <img src="/images/pictures.png"/>
+        </div>
+        <h2 class="mt-2" style="font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: bold;">Screenshots
+        </h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div style="display: block; margin: 30px auto;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Multiple deliveries from a single sale order</h3>
+                <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+                    You will be able to generate multiple deliveries according to the quantity of the product and the customer's requirements, to be able to sell without having to deliver or set aside the entire product in a single delivery order, to be delivered in packages in the future.
+                </p>
+            </div>
+            <div style="display: block; margin: 30px auto;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">1. Confirm the sale order</h3>
+                <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+                    A quotation with several order lines (here two products, quantities 10 and 5) is confirmed as usual.
+                </p>
+                <img src="screenshots/shot_01_quotation.png" class="img-thumbnail"/>
+            </div>
+            <div style="display: block; margin: 30px auto;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">2. The "Create Picking" button appears</h3>
+                <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+                    As soon as the order is confirmed, the module adds a "Create Picking" button next to Confirm — it only shows while any line still has quantity pending to be put into a delivery.
+                </p>
+                <img src="screenshots/shot_02_confirmed_order.png" class="img-thumbnail"/>
+            </div>
+            <div style="display: block; margin: 30px auto;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">3. Set the quantity to deliver, per line</h3>
+                <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+                    Clicking "Create Picking" opens a wizard listing every order line with its ordered and already-delivered quantity, plus an editable "Qty to picking" column.
+                </p>
+                <img src="screenshots/shot_03_wizard_empty.png" class="img-thumbnail"/>
+                <img src="screenshots/shot_04_wizard_filled.png" class="img-thumbnail"/>
+            </div>
+            <div style="display: block; margin: 30px auto;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">4. Restrict deliveries to what was actually sold</h3>
+                <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+                    The module blocks any attempt to request more quantity than what remains on the order line, so a delivery can never exceed what the customer bought.
+                </p>
+            </div>
+            <div style="display: block; margin: 30px auto;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">5. First partial delivery is generated</h3>
+                <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+                    Confirming the wizard creates a stock picking for just that partial quantity. The order now shows "1 Delivery" and the "Qty in picking" column reflects what was just sent to the warehouse.
+                </p>
+                <img src="screenshots/shot_05_first_delivery.png" class="img-thumbnail"/>
+            </div>
+            <div style="display: block; margin: 30px auto;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">6. Repeat for the remaining quantity</h3>
+                <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+                    "Create Picking" is still available because quantity remains pending. Opening the wizard again shows the quantity already in picking, and lets you set the rest.
+                </p>
+                <img src="screenshots/shot_06_wizard_remaining.png" class="img-thumbnail"/>
+            </div>
+            <div style="display: block; margin: 30px auto;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">7. Fully split — the button disappears</h3>
+                <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+                    Once every line's "Qty in picking" matches the ordered quantity, "Create Picking" is hidden automatically and the order shows "2 Delivery".
+                </p>
+                <img src="screenshots/shot_07_fully_split.png" class="img-thumbnail"/>
+            </div>
+            <div style="display: block; margin: 30px auto;">
+                <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">8. Two independent transfers, one sale order</h3>
+                <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+                    Opening the Delivery smart button shows the two separate stock transfers (WH/OUT) that were generated on demand from the same sale order, each with its own quantities.
+                </p>
+                <img src="screenshots/shot_08_two_transfers.png" class="img-thumbnail"/>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="d-flex align-items-center" style="border-bottom: 2px solid #00438B; padding: 15px 0px;" id="screenshots">
-    <div class="d-flex justify-content-center align-items-center mr-2"
-        style="background-color: #F5F5F5; border-radius: 0px; width: 40px; height: 40px;">
-            <img src="/images/pictures.png" />
-    </div>
-    <h2 class="mt-2" style="font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: bold;">Screenshots
-    </h2>
-</div>
-<div class="row">
-    <div class="col-sm-12">
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Multiple deliveries</h3>
-            <p style="font-weight: 400; font-family: 'Montserrat', sans-serif; font-size: 14px;">
-                You will be able to generate multiple deliveries according to the quantity of the product and the customer's requirements, to be able to sell without having to deliver or set aside the entire product in a single delivery order, to be delivered in packages in the future.
-            </p>
-            <img src="screenshots/screen_01.png" class="img-thumbnail">
-        </div>
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Confirmar la venta</h3>
-            <img src="screenshots/step_01.png" class="img-thumbnail">
-        </div>
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Crear Entregas</h3>
-            <img src="screenshots/step_02.png" class="img-thumbnail">
-        </div>
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Establecer cantidades</h3>
-            <img src="screenshots/step_03.png" class="img-thumbnail">
-            <img src="screenshots/step_04.png" class="img-thumbnail">
-        </div>
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Restringir entregas según lo vendido</h3>
-            <img src="screenshots/step_05.png" class="img-thumbnail">
-        </div>
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Entregas Parciales o Divididas</h3>
-            <img src="screenshots/step_06.png" class="img-thumbnail">
-        </div>
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Establecer cantidades restantes</h3>
-            <img src="screenshots/step_07.png" class="img-thumbnail">
-            <img src="screenshots/step_08.png" class="img-thumbnail">
-        </div>
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Prducto repartido en entregas</h3>
-            <img src="screenshots/step_09.png" class="img-thumbnail">
-        </div>
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Ordenes de entregas</h3>
-            <img src="screenshots/step_10.png" class="img-thumbnail">
-            <img src="screenshots/step_11.png" class="img-thumbnail">
-        </div>
-        <div style="display: block; margin: 30px auto;">
-            <h3 style="font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: bold;">Detalles de entregas en Ordenes de Venta</h3>
-            <img src="screenshots/step_12.png" class="img-thumbnail">
-        </div>
-    </div>
-    
-</div>
-
-<section class="oe_container oe_dark "> 
+<section class="oe_container oe_dark ">
     <div class="oe_row oe_spaced ">
         <h1 class="oe_slogan" style="color:#875A7B;">Translated languages</h1>
         <div class="oe_span1 text-center ">
-            <img class="o_kanban_image " src="flag/arg.png " />
-            <img class="o_kanban_image " src="flag/bol.png " />
-            <img class="o_kanban_image " src="flag/chile.jpeg " />
-            <img class="o_kanban_image " src="flag/col.png " />
-            <img class="o_kanban_image " src="flag/cr.jpeg " />
-            <img class="o_kanban_image " src="flag/ecu.png " />
-            <img class="o_kanban_image " src="flag/eeuu.png " />
-            <img class="o_kanban_image " src="flag/esp.png " />
-            <img class="o_kanban_image " src="flag/gt.png " />
-            <img class="o_kanban_image " src="flag/hnd.png " />
-            <img class="o_kanban_image " src="flag/mex.png " />
-            <img class="o_kanban_image " src="flag/nic.png " />
-            <img class="o_kanban_image " src="flag/pana.png " />
-            <img class="o_kanban_image " src="flag/sv.jpeg " />
-            <img class="o_kanban_image " src="flag/ven.png " />
+            <img class="o_kanban_image " src="flag/arg.png "/>
+            <img class="o_kanban_image " src="flag/bol.png "/>
+            <img class="o_kanban_image " src="flag/chile.jpeg "/>
+            <img class="o_kanban_image " src="flag/col.png "/>
+            <img class="o_kanban_image " src="flag/cr.jpeg "/>
+            <img class="o_kanban_image " src="flag/ecu.png "/>
+            <img class="o_kanban_image " src="flag/eeuu.png "/>
+            <img class="o_kanban_image " src="flag/esp.png "/>
+            <img class="o_kanban_image " src="flag/gt.png "/>
+            <img class="o_kanban_image " src="flag/hnd.png "/>
+            <img class="o_kanban_image " src="flag/mex.png "/>
+            <img class="o_kanban_image " src="flag/nic.png "/>
+            <img class="o_kanban_image " src="flag/pana.png "/>
+            <img class="o_kanban_image " src="flag/sv.jpeg "/>
+            <img class="o_kanban_image " src="flag/ven.png "/>
         </div>
     </div>
 </section>
+</div>
