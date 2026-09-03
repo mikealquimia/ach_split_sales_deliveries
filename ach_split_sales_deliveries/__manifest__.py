@@ -11,7 +11,7 @@
     'category': 'Sales',
     'version': '12.0.1.0.0',
     'live_test_url': 'https://youtu.be/EDem9LEk6z8',
-    'price': 18.00,
+    'price': 10.00,
     'depends': ['base',
                 'sale_stock'],
     'data': [
